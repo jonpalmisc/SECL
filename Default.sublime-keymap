@@ -78,5 +78,11 @@
   { "keys": ["ctrl+/"], "command": "undo" },
   { "keys": ["ctrl+w"], "command": "cut" },
   { "keys": ["alt+w"], "command": "copy" },
-  { "keys": ["ctrl+y"], "command": "paste_and_indent" }
+  { "keys": ["ctrl+y"], "command": "paste_and_indent" },
+
+  {
+    "keys": ["shift+tab"],
+    "command": "reindent",
+    "args": { "single_line": true }
+  }
 ]
