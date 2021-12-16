@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 
 
-class SicilyMoveToExtremeCommand(sublime_plugin.TextCommand):
+class SeclMoveToExtremeCommand(sublime_plugin.TextCommand):
     def run(self, edit: sublime.Edit, location: str):
         self.view.sel().clear()
 

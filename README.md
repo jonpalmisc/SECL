@@ -1,6 +1,6 @@
-# Sicily
+# SECL (Sublime/Emacs Compatibility Layer)
 
-Sicily is a small plugin for Sublime Text 4 meant to provide an Emacs-like
+SECL is a small plugin for Sublime Text 4 meant to provide an Emacs-like
 experience inside of Sublime Text; it is a work in progress. This is an
 opinionated project whose goals are to:
 
@@ -17,7 +17,7 @@ For a more comprehensive Emacs emulation plugin, see [Emacs Pro Essentials](http
 
 ## Installation
 
-You can install Sicily by cloning or downloading this repository into your
+You can install SECL by cloning or downloading this repository into your
 Sublime Text packages folder.
 
 ## License

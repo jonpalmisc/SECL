@@ -67,12 +67,12 @@
 
   {
     "keys": ["alt+shift+,"],
-    "command": "sicily_move_to_extreme",
+    "command": "secl_move_to_extreme",
     "args": { "location": "start" }
   },
   {
     "keys": ["alt+shift+."],
-    "command": "sicily_move_to_extreme",
+    "command": "secl_move_to_extreme",
     "args": { "location": "end" }
   },
 
