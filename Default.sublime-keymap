@@ -17,6 +17,11 @@
     "args": { "by": "lines", "forward": false }
   },
   {
+    "keys": ["ctrl+shift+p"],
+    "command": "move",
+    "args": { "by": "lines", "forward": false, "extend": true }
+  },
+  {
     "keys": ["ctrl+n"],
     "command": "move",
     "args": { "by": "lines", "forward": true }
