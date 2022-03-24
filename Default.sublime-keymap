@@ -75,6 +75,17 @@
     "args": { "by": "subword_ends", "forward": false }
   },
 
+  {
+    "keys": ["alt+shift+b"],
+    "command": "move",
+    "args": { "by": "subwords", "forward": false, "extend": true }
+  },
+  {
+    "keys": ["alt+shift+f"],
+    "command": "move",
+    "args": { "by": "subword_ends", "forward": true, "extend": true }
+  },
+
   //===--- Buffer-extreme movement ---------------------------------------===//
 
   {
