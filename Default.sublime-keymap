@@ -27,18 +27,6 @@
     "args": { "by": "lines", "forward": true }
   },
 
-  // A bit of a hack until I implement paragraph movement.
-  {
-    "keys": ["alt+shift+["],
-    "command": "secl_move_repeat",
-    "args": { "count": 4, "by": "lines", "forward": false, "extend": false }
-  },
-  {
-    "keys": ["alt+shift+]"],
-    "command": "secl_move_repeat",
-    "args": { "count": 4, "by": "lines", "forward": true, "extend": false }
-  },
-
   //===--- Character-based movement --------------------------------------===//
 
   {
@@ -84,6 +72,19 @@
     "keys": ["alt+shift+f"],
     "command": "move",
     "args": { "by": "subword_ends", "forward": true, "extend": true }
+  },
+
+  //===--- Paragraph-based movement ---------------------------------------===//
+
+  {
+    "keys": ["alt+shift+["],
+    "command": "secl_move_by_paragraph",
+    "args": { "forward": false }
+  },
+  {
+    "keys": ["alt+shift+]"],
+    "command": "secl_move_by_paragraph",
+    "args": { "forward": true }
   },
 
   //===--- Buffer-extreme movement ---------------------------------------===//
