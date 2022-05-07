@@ -92,12 +92,12 @@
   {
     "keys": ["alt+shift+,"],
     "command": "secl_move_to_extreme",
-    "args": { "location": "start" }
+    "args": { "forward": false }
   },
   {
     "keys": ["alt+shift+."],
     "command": "secl_move_to_extreme",
-    "args": { "location": "end" }
+    "args": { "forward": true }
   },
 
   //===--- Miscellaneous editing -----------------------------------------===//
