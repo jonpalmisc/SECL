@@ -110,6 +110,17 @@
   { "keys": ["ctrl+y"], "command": "paste_and_indent" },
 
   {
+    "keys": ["ctrl+shift+,"],
+    "command": "select_lines",
+    "args": { "forward": false }
+  },
+  {
+    "keys": ["ctrl+shift+."],
+    "command": "select_lines",
+    "args": { "forward": true }
+  },
+
+  {
     "keys": ["shift+tab"],
     "command": "reindent",
     "args": { "single_line": true }
