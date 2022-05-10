@@ -6,9 +6,10 @@ class SeclMoveToExtremeCommand(sublime_plugin.TextCommand):
     def run(self, edit: sublime.Edit, forward: bool):
         self.view.sel().clear()
         dest = self.view.size() if forward else 0
+        reg = sublime.Region(dest)
 
-        self.view.sel().add(sublime.Region(dest))
-        self.view.show_at_center(self.view.sel()[0])
+        self.view.sel().add(reg)
+        self.view.show(reg)
 
 
 class SeclMoveRepeatCommand(sublime_plugin.TextCommand):
@@ -35,6 +36,8 @@ class SeclMoveByParagraphCommand(sublime_plugin.TextCommand):
     def run(self, edit: sublime.Edit, forward: bool):
         pos = self.view.sel()[0].begin()
         dest = self.next_par_from(pos) if forward else self.prev_par_from(pos)
+        reg = sublime.Region(dest)
 
         self.view.sel().clear()
-        self.view.sel().add(sublime.Region(dest))
+        self.view.sel().add(reg)
+        self.view.show(reg, False)
