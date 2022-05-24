@@ -100,7 +100,33 @@
     "args": { "forward": true }
   },
 
-  //===--- Miscellaneous editing -----------------------------------------===//
+  //===--- Buffer navigation ----------------------------------------------===//
+
+  {
+    "keys": ["ctrl+s"],
+    "command": "show_panel",
+    "args": { "panel": "incremental_find", "reverse": false }
+  },
+  {
+    "keys": ["ctrl+r"],
+    "command": "show_panel",
+    "args": { "panel": "incremental_find", "reverse": true }
+  },
+
+  //===--- Common commands ------------------------------------------------===//
+
+  {
+    "keys": ["ctrl+x", "ctrl+s"],
+    "command": "save",
+    "args": { "async": "true" }
+  },
+  {
+    "keys": ["alt+x"],
+    "command": "show_overlay",
+    "args": { "overlay": "command_palette" }
+  },
+
+  //===--- Miscellaneous editing ------------------------------------------===//
 
   { "keys": ["alt+q"], "command": "wrap_lines" },
 
