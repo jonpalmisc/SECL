@@ -129,6 +129,7 @@
   //===--- Miscellaneous editing ------------------------------------------===//
 
   { "keys": ["alt+q"], "command": "wrap_lines" },
+  { "keys": ["alt+;"], "command": "secl_comment" },
 
   { "keys": ["ctrl+/"], "command": "undo" },
   { "keys": ["ctrl+w"], "command": "cut" },
