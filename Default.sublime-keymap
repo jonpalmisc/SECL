@@ -136,9 +136,36 @@
   { "keys": ["alt+w"], "command": "copy" },
   { "keys": ["ctrl+y"], "command": "paste_and_indent" },
 
-  { "keys": ["alt+l"], "command": "lower_case" },
-  { "keys": ["alt+u"], "command": "upper_case" },
-  { "keys": ["alt+c"], "command": "title_case" },
+  {
+    "keys": ["alt+l"],
+    "command": "chain",
+    "args": {
+      "commands": [
+        { "command": "lower_case" },
+        { "command": "move", "args": { "by": "subword_ends", "forward": true } }
+      ]
+    }
+  },
+  {
+    "keys": ["alt+u"],
+    "command": "chain",
+    "args": {
+      "commands": [
+        { "command": "upper_case" },
+        { "command": "move", "args": { "by": "subword_ends", "forward": true } }
+      ]
+    }
+  },
+    {
+    "keys": ["alt+c"],
+    "command": "chain",
+    "args": {
+      "commands": [
+        { "command": "title_case" },
+        { "command": "move", "args": { "by": "subword_ends", "forward": true } }
+      ]
+    }
+  },
 
   {
     "keys": ["ctrl+shift+,"],
