@@ -136,6 +136,10 @@
   { "keys": ["alt+w"], "command": "copy" },
   { "keys": ["ctrl+y"], "command": "paste_and_indent" },
 
+  { "keys": ["alt+l"], "command": "lower_case" },
+  { "keys": ["alt+u"], "command": "upper_case" },
+  { "keys": ["alt+c"], "command": "title_case" },
+
   {
     "keys": ["ctrl+shift+,"],
     "command": "select_lines",
