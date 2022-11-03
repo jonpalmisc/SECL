@@ -112,6 +112,40 @@
     "command": "show_panel",
     "args": { "panel": "incremental_find", "reverse": true }
   },
+  {
+    "keys": ["alt+."],
+    "command": "prev_result",
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.find-in-files"
+      }
+    ]
+  },
+
+  //===-- LSP navigation --------------------------------------------------===//
+
+  {
+    "keys": ["alt+."],
+    "command": "lsp_symbol_declaration"
+  },
+  {
+    "keys": ["alt+shift+/"],
+    "command": "lsp_symbol_references"
+  },
+  {
+    "keys": ["alt+shift+'"],
+    "command": "lsp_hover"
+  },
+  {
+    "keys": ["ctrl+;", "r"],
+    "command": "lsp_symbol_rename"
+  },
+  {
+    "keys": ["ctrl+;", "a"],
+    "command": "lsp_code_actions"
+  },
 
   //===--- Common commands ------------------------------------------------===//
 
@@ -125,6 +159,11 @@
     "command": "show_overlay",
     "args": { "overlay": "command_palette" }
   },
+  {
+    "keys": ["ctrl+x", "ctrl+p"],
+    "comamnd": "show_overlay",
+    "args": {"overlay": "goto", "show_files": true}
+  },
 
   //===--- Miscellaneous editing ------------------------------------------===//
 
@@ -135,6 +174,8 @@
   { "keys": ["ctrl+w"], "command": "cut" },
   { "keys": ["alt+w"], "command": "copy" },
   { "keys": ["ctrl+y"], "command": "paste_and_indent" },
+
+  { "keys": ["alt+o"], "command": "toggle_overwrite" },
 
   {
     "keys": ["alt+l"],
