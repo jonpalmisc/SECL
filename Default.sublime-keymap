@@ -165,6 +165,22 @@
     "args": {"overlay": "goto", "show_files": true}
   },
 
+  {
+    "keys": ["ctrl+c", "ctrl+f"],
+    "command": "show_panel",
+    "args": { "panel": "find_in_files" }
+  },
+  {
+    "keys": ["ctrl+c", "ctrl+r"],
+    "command": "show_panel",
+    "args": { "panel": "replace" }
+  },
+
+  {
+    "keys": ["ctrl+x", "g"],
+    "command": "sublime_merge_open_repo"
+  },
+
   //===--- Miscellaneous editing ------------------------------------------===//
 
   { "keys": ["alt+q"], "command": "wrap_lines" },
