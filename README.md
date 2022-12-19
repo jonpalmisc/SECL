@@ -1,7 +1,8 @@
 # SECL (Sublime/Emacs Compatibility Layer)
 
 SECL is a small plugin for Sublime Text 4 meant to provide an Emacs-like
-experience inside of Sublime Text; it is a work in progress. 
+experience inside of Sublime Text; it is a work in progress. All of the basic
+keybindings also work in Sublime Merge!
 
 The goals of this project are to provide traditional Emacs movement and editing
 keybindings&mdash;e.g. `C-a` and `M-f`&mdash;out of the box, while also using
