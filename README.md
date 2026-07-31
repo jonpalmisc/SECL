@@ -18,6 +18,6 @@ Sublime Text packages folder.
 
 ## License
 
-Copyright (c) 2022 Jon Palmisciano; licensed under the BSD-3-Clause license.
+Copyright (c) 2021-2026 Jon Palmisciano; licensed under the BSD-3-Clause license.
 
 For more information, see LICENSE.txt.
