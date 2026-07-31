@@ -26,6 +26,11 @@
     "command": "move",
     "args": { "by": "lines", "forward": true }
   },
+  {
+    "keys": ["ctrl+shift+n"],
+    "command": "move",
+    "args": { "by": "lines", "forward": true, "extend": true }
+  },
 
   //===--- Character-based movement --------------------------------------===//
 
