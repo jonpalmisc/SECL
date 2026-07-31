@@ -234,6 +234,11 @@
     "command": "select_lines",
     "args": { "forward": true }
   },
+  {
+    "keys": ["ctrl+\\"],
+    "command": "select_lines",
+    "args": { "forward": true }
+  },
 
   {
     "keys": ["shift+tab"],
