@@ -133,7 +133,7 @@
 
   {
     "keys": ["alt+."],
-    "command": "lsp_symbol_declaration"
+    "command": "lsp_symbol_definition"
   },
   {
     "keys": ["alt+shift+/"],
